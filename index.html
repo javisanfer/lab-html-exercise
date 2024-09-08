@@ -26,13 +26,18 @@
         </div>
         <div>
           <img class="npmLogo" src="images/npm-logo.png" alt="npm logo" />
-          <img class="magnifyingGlass" src="images/magnifying-glass.png" alt="magnifying glass" />
-          <label for="searchPackages" ></label>
-          <input type="text" name="searchPackages" id="searchPackages" placeholder="Search packages">
-          <button>Search</button>
+          <form class="search-form">
+              <div>
+                <span>
+                  <img class="magnifyingGlass" src="images/magnifying-glass.png" alt="magnifying glass" />
+                </span>
+                <input type="text" name="searchPackages" id="searchPackages" class ="search-text" placeholder="Search packages">
+              </div>
+              <button class="search-button">Search</button>
+          </form>
           <div>
-            <a href="#">Join</a>
-            <a href="#">Log In</a>
+            <a class="join" href="#">Join</a>
+            <a class="log" href="#">Log In</a>
           </div>
         </div>
     </header>
@@ -43,8 +48,8 @@
         <p>Essential JavaScript development tools that help you go to market faster and build powerful applications using modern open source code.</p>
       </article>
       <div>
-        <a href="#">See plans</a>
-        <a href="#">Join for free</a>
+        <a class="lnk-btnRed" href="#">See plans</a>
+        <a class="lnk-btn" href="#">Join for free</a>
       </div>
     </section>
 
@@ -58,26 +63,28 @@
 
     <section id="information">
       <div>
-        <img class="zeroConfiguration" src="images/zero-configuration.svg" alt="zero configuration" />
-        <h3>Zero configuration</h3>
-        <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+        <div class="information-box">
+         <img class="zeroConfiguration" src="images/zero-configuration.svg" alt="zero configuration" />
+          <h3>Zero configuration</h3>
+          <p>Create an org, add your team, and start collaborating. Nothing to configure, set up, or manage.</p>
+        </div>
+          <div class="information-box">
+          <img class="teamManagement" src="images/team-management.svg" alt="team management" />
+          <h3>Team management</h3>
+          <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
+        </div>
+        <div class="information-box">
+          <img class="familiarFeatures" src="images/familiar-features.svg" alt="familiar features" />
+          <h3>Familiar features</h3>
+          <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
+        </div>
+        <div class="information-box">
+          <img class="npmAudit" src="images/npm-audit.svg" alt="npm audit" />
+          <h3>npm audit</h3>
+          <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
+        </div>
       </div>
-      <div>
-        <img class="teamManagement" src="images/team-management.svg" alt="team management" />
-        <h3>Team management</h3>
-        <p>Control who has access to what modules within your team namespace using straightforward team management capabilities.</p>
-      </div>
-      <div>
-      <img class="familiarFeatures" src="images/familiar-features.svg" alt="familiar features" />
-        <h3>Familiar features</h3>
-        <p>npm Orgs has 100% parity with all the public npm registry features your developers already use.</p>
-      </div>
-      <div>
-        <img class="npmAudit" src="images/npm-audit.svg" alt="npm audit" />
-        <h3>npm audit</h3>
-        <p>Enjoy the security auditing features built into the npm client, a zero-friction way to make open source software safer.</p>
-      </div>
-      <a href="#">Create an Org</a>
+      <a class="final-button" href="#">Create an Org</a>
     </section>
   </body>
 </html>
